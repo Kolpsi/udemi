@@ -27,6 +27,42 @@ for (let i = 0; i < 2; i++) {
     }
 };
 
+// Тренировочный цикл while
+
+// let i = 0;
+
+// while (i < 2) {
+//     let budget = prompt("Введите обязательную статью расходов в этом месяце?", "");
+//     let sum = prompt("Во сколько обойдется?", "");
+
+//     if ((typeof (budget)) === "string" && (typeof (budget)) != null && (typeof (sum)) != null &&
+//         budget != '' && sum != '' & budget.length < 50) {
+//         console.log('done');
+//         appData.expenses[budget] = sum;
+//         i++;
+//     } else {
+//         i = i - 1
+//     }
+// };
+
+// Тренировочный цикл do...while
+
+// let i = 0;
+
+// do {
+//     let budget = prompt("Введите обязательную статью расходов в этом месяце?", "");
+//     let sum = prompt("Во сколько обойдется?", "");
+
+//     if ((typeof (budget)) === "string" && (typeof (budget)) != null && (typeof (sum)) != null &&
+//         budget != '' && sum != '' & budget.length < 50) {
+//         console.log('done');
+//         appData.expenses[budget] = sum;
+//         i++;
+//     } else {
+//         i = i - 1
+//     }
+// }while (i < 2);
+
 appData.moneyPerDay = appData.cash / 30;
 
 alert("Ежедневный бюджет: " + appData.moneyPerDay);
