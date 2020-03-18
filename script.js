@@ -74,6 +74,14 @@ let appData = {
             } else {
                 i = i - 1;
             }
+            appData.income.forEach(element => alert("Способы доп. заработка: " + element));
         }
+        
+    }
+}
+
+for (const key in appData) {
+    if (appData.hasOwnProperty(key)) {
+        console.log("Наша программа включает в себя данные: " + key);
     }
 }
