@@ -87,14 +87,22 @@ let more = document.querySelector('.more');
 let overlay = document.querySelector('.overlay');
 let close = document.querySelector('.popup-close');
 
-more.addEventListener('click', function(evt) {
-    evt.preventDefault();
-    overlay.style.display = 'block';
-    this.classList.add('more-splash');
-    document.body.style.overflow = 'hidden';
-});
-
 close.addEventListener('click', function(evt) {
     evt.preventDefault();
     overlay.style.display = 'none';
+    document.body.style.overflow = '';
 })
+
+// modal description
+
+let descriptionBtn = document.querySelector('.description-btn');
+
+document.addEventListener('click', function(evt) {
+    if (evt.target.classList.contains('description-btn') || evt.target.classList.contains('more')) {
+        evt.preventDefault();
+        overlay.style.display = 'block';
+        this.classList.add('more-splash');
+        document.body.style.overflow = 'hidden';
+    }
+    
+});
